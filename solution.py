@@ -91,7 +91,8 @@ def creating_dataframe(DF):
     DF.loc[(DF["Transaction Type"] == "Child") | (DF["Transaction Type"] == "Other"), "Amount Verified" ] = "NA"
     DF.loc[(DF["Transaction Type"] == "Parent") | (DF["Transaction Type"] == "Other"),["Ref No","Ref Type","Ref Date","Ref Amount"]] = "NA"
     DF.loc[DF["Transaction Type"] == "Child","Amount"] = "NA"
-    DF.to_excel("Result.xlsx", index=False)
+    DF.to_excel("Response.xlsx", index=False)
+
 
 filename = "Input.xml"
 DF = parsing_xml(filename)
