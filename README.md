@@ -8,3 +8,5 @@ Nirmitee interview assignment
 
 # Objective:
 1. create a response spreadsheet for all the transactions where the voucher type is “Receipt”. In the requested format.
+
+will be changing the program for dynamic processing.
